@@ -22,4 +22,20 @@ public class UserRegistration {
         else
             System.out.println("It is invalid first name.");
     }
+
+    public static void validateLastName(){
+
+        System.out.println("Enter last name: ");
+        String lName = sc.next();
+        String regex1 = "^[A-Z]{1}[a-z]{2,}$";
+
+        Pattern pattern1 = Pattern.compile(regex1);
+        Matcher matcher1 = pattern1.matcher(lName);
+        boolean r = matcher1.matches();
+
+        if (r)
+            System.out.println("It is a valid last name.");
+        else
+            System.out.println("It is invalid last name.");
+    }
 }
