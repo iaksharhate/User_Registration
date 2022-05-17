@@ -54,6 +54,10 @@ public class UserRegistrationMain {
                     UserRegistration.validatePasswordRule4();
                 break;
 
+                case 9:
+                    UserRegistration.validateEmailSamples();
+                break;
+
                 default:
                     System.out.println("Enter valid input.");
             }

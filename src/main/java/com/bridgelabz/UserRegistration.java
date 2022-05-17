@@ -129,4 +129,18 @@ public class UserRegistration {
             System.out.println("It is invalid Password.");
 
     }
+
+    public static void validateEmailSamples (){
+        System.out.println("Enter your Email: ");
+        String email = sc.nextLine();
+        String regex8 = "[a-zA-Z0-9_.]*[-]*[+]*[a-zA-Z0-9]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+";
+        Pattern pattern8 = Pattern.compile(regex8);
+        Matcher matcher8 = pattern8.matcher(email);
+        boolean r = matcher8.matches();
+
+        if (r)
+            System.out.println("It is a valid E-mail.");
+        else
+            System.out.println("It is invalid E-mail.");
+    }
 }
