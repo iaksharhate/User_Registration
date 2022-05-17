@@ -143,14 +143,6 @@ public class UserRegistration {
         else
             System.out.println("It is invalid E-mail.");
     }
-//    1] Test case with Junit to validate First Name
-//    public boolean validateFirstName(String fName) {
-//        String regex = "^[A-Z]{1}[a-z]*";
-//        Pattern pattern = Pattern.compile(regex);
-//        Matcher matcher = pattern.matcher(fName);
-//        boolean r = matcher.matches();
-//        return r;
-//    }
 
     public static final String regex = "^[A-Z]{1}[a-z]*";
 
@@ -162,14 +154,6 @@ public class UserRegistration {
             throw new UserRegistrationException("Enter valid first name.");
         }
     }
-//    2] Test case with Junit to validate Last Name
-//    public boolean validateLastName(String lName) {
-//        String regex = "^[A-Z]{1}[a-z]*";
-//        Pattern pattern = Pattern.compile(regex);
-//        Matcher matcher = pattern.matcher(lName);
-//        boolean r = matcher.matches();
-//        return r;
-//    }
 
     public static final String regex1 = "^[A-Z]{1}[a-z]*";
 
@@ -181,14 +165,6 @@ public class UserRegistration {
             throw new UserRegistrationException("Enter valid last name.");
         }
     }
-//    3] Test case with Junit to validate Email
-//    public boolean validateEmail(String email) {
-//        String regex = "^[a-zA-Z0-9]+([.][A-Za-z]+)*@[a-zA-Z]+[.]+[a-zA-Z]{2,3}+([.][A-Za-z]+)*$";
-//        Pattern pattern = Pattern.compile(regex);
-//        Matcher matcher = pattern.matcher(email);
-//        boolean r = matcher.matches();
-//        return r;
-//    }
 
     public static final String regex2 = "^[a-zA-Z0-9]+([.][A-Za-z]+)*@[a-zA-Z]+[.]+[a-zA-Z]{2,3}+([.][A-Za-z]+)*$";
 
@@ -200,14 +176,6 @@ public class UserRegistration {
             throw new UserRegistrationException("Enter valid Email.");
         }
     }
-//    4] Test case with Junit to validate Mobile Number
-//    public boolean validateMobileNumber(String mobileNumber) {
-//        String regex = "(0|91)?[7-9][0-9]{9}";
-//        Pattern pattern = Pattern.compile(regex);
-//        Matcher matcher = pattern.matcher(mobileNumber);
-//        boolean r = matcher.matches();
-//        return r;
-//    }
 
     public static final String regex3 = "(0|91)?[7-9][0-9]{9}";
 
@@ -219,14 +187,6 @@ public class UserRegistration {
             throw new UserRegistrationException("Enter valid Mobile Number.");
         }
     }
-//    5] Test case with Junit to validate password by Rule 1
-//    public boolean validatePassword01(String password01) {
-//        String regex = "^[A-Z a-z 0-9]{8,}$";
-//        Pattern pattern = Pattern.compile(regex);
-//        Matcher matcher = pattern.matcher(password01);
-//        boolean r = matcher.matches();
-//        return r;
-//    }
 
     public static final String regex4 = "(^[A-Z a-z 0-9]{8,}$";
 
@@ -238,14 +198,6 @@ public class UserRegistration {
             throw new UserRegistrationException("Enter valid Password.");
         }
     }
-//    6] Test case with Junit to validate password by Rule 2
-//    public boolean validatePassword02(String password02) {
-//        String regex = "^[A-Z]{1}+[a-z 0-9]{7,}$";
-//        Pattern pattern = Pattern.compile(regex);
-//        Matcher matcher = pattern.matcher(password02);
-//        boolean r = matcher.matches();
-//        return r;
-//    }
 
     public static final String regex5 = "^[A-Z]{1}+[a-z 0-9]{7,}$";
 
@@ -257,14 +209,6 @@ public class UserRegistration {
             throw new UserRegistrationException("Enter valid Password.");
         }
     }
-//    7] Test case with Junit to validate password by Rule 3
-//    public boolean validatePassword03(String password03) {
-//        String regex = "^[A-Z]{1}+[a-zA-Z]{6}+[0-9]+{1,}$";
-//        Pattern pattern = Pattern.compile(regex);
-//        Matcher matcher = pattern.matcher(password03);
-//        boolean r = matcher.matches();
-//        return r;
-//    }
 
     public static final String regex6 = "^[A-Z]{1}+[a-zA-Z]{6}+[0-9]+{1,}$";
 
@@ -276,14 +220,6 @@ public class UserRegistration {
             throw new UserRegistrationException("Enter valid Password.");
         }
     }
-//    8] Test case with Junit to validate password by Rule 4
-//    public boolean validatePassword04(String password04) {
-//        String regex = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*#?&])[A-Za-z0-9@$!%*?&]{5,}$";
-//        Pattern pattern = Pattern.compile(regex);
-//        Matcher matcher = pattern.matcher(password04);
-//        boolean r = matcher.matches();
-//        return r;
-//    }
 
     public static final String regex7 = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[@$!%*#?&])[A-Za-z0-9@$!%*?&]{5,}$";
 
