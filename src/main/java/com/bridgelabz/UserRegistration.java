@@ -191,4 +191,12 @@ public class UserRegistration {
         boolean r = matcher.matches();
         return r;
     }
+
+    public boolean validatePassword03(String password03) {
+        String regex = "^[A-Z]{1}+[a-zA-Z]{6}+[0-9]+{1,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password03);
+        boolean r = matcher.matches();
+        return r;
+    }
 }

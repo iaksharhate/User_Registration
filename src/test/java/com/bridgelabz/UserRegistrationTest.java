@@ -43,8 +43,14 @@ public class UserRegistrationTest {
     @Test
     public void givenPassword02_WhenProper_ShouldReturnTrue(){
         UserRegistration userRegistration = new UserRegistration();
-        boolean result = userRegistration.validatePassword02("Akshar01");
+        boolean result = userRegistration.validatePassword02("Aksharha");
         Assertions.assertTrue(result);
     }
 
+    @Test
+    public void givenPassword03_WhenProper_ShouldReturnTrue(){
+        UserRegistration userRegistration = new UserRegistration();
+        boolean result = userRegistration.validatePassword03("AksharH1");
+        Assertions.assertTrue(result);
+    }
 }
