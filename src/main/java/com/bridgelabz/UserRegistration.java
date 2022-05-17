@@ -143,4 +143,12 @@ public class UserRegistration {
         else
             System.out.println("It is invalid E-mail.");
     }
+
+    public boolean validateFirstName(String fName) {
+        String regex = "^[A-Z]{1}[a-z]*";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(fName);
+        boolean r = matcher.matches();
+        return r;
+    }
 }
