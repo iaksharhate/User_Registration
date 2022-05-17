@@ -159,4 +159,12 @@ public class UserRegistration {
         boolean r = matcher.matches();
         return r;
     }
+
+    public boolean validateEmail(String email) {
+        String regex = "^[a-zA-Z0-9]+([.][A-Za-z]+)*@[a-zA-Z]+[.]+[a-zA-Z]{2,3}+([.][A-Za-z]+)*$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(email);
+        boolean r = matcher.matches();
+        return r;
+    }
 }
