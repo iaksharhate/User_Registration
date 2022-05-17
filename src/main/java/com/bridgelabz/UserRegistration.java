@@ -167,4 +167,12 @@ public class UserRegistration {
         boolean r = matcher.matches();
         return r;
     }
+
+    public boolean validateMobileNumber(String mobileNumber) {
+        String regex = "(0|91)?[7-9][0-9]{9}";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(mobileNumber);
+        boolean r = matcher.matches();
+        return r;
+    }
 }
