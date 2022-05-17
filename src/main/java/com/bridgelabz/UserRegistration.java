@@ -175,4 +175,12 @@ public class UserRegistration {
         boolean r = matcher.matches();
         return r;
     }
+
+    public boolean validatePassword01(String password01) {
+        String regex = "^[A-Z a-z 0-9]{8,}$";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(password01);
+        boolean r = matcher.matches();
+        return r;
+    }
 }
