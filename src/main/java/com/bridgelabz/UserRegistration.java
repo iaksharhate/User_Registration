@@ -151,4 +151,12 @@ public class UserRegistration {
         boolean r = matcher.matches();
         return r;
     }
+
+    public boolean validateLastName(String lName) {
+        String regex = "^[A-Z]{1}[a-z]*";
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(lName);
+        boolean r = matcher.matches();
+        return r;
+    }
 }
